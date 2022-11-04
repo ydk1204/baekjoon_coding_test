@@ -17,12 +17,17 @@ let txt = "";
 
 // console.log(arr.join(""));
 
+// for (let i = 0; i < input.length; i++) {
+//   if (input.charCodeAt(i) <= 97) {
+//     txt += input[i].toLowerCase();
+//   } else {
+//     txt += input[i].toUpperCase();
+//   }
+// }
+
 for (let i = 0; i < input.length; i++) {
-  if (input.charCodeAt(i) <= 97) {
-    txt += input[i].toLowerCase();
-  } else {
-    txt += input[i].toUpperCase();
-  }
+  if (input[i] === input[i].toUpperCase()) txt += input[i].toLowerCase();
+  else txt += input[i].toUpperCase();
 }
 
 console.log(txt);

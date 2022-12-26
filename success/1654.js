@@ -24,7 +24,7 @@ while (min <= max) {
   else max = mid - 1;
 }
 
-// console.log(max);
+console.log(max);
 
 // 시간 초과
 // const [K, N] = input
